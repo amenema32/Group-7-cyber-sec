@@ -2,12 +2,9 @@
 Project Title:
  Advanced Python-Based ARP Spoofing, Port Scanning, and HTTP Anomaly Detection
  
- In recent network environments, securing internal and external communications is mainthings  due to the growing number of cyberattacks 
- targeting vulnerabilities at different layers of the OSI model. Traditional firewalls and antivirus tools are often insufficient to detect 
- low-level or stealthy threats like ARP spoofing, SYN port scans, or unauthorized HTTP access.
+ In recent network environments, securing internal and external communications is mainthings  due to the growing number of cyberattacks targeting vulnerabilities at different layers of the OSI model. Traditional firewalls and antivirus tools are often insufficient to detect low-level or stealthy threats like ARP spoofing, SYN port scans, or unauthorized HTTP access.
 
-Our project aims to build a lightweight yet effective  Detection System (IDS) using Python that can be deployed in educational labs and also 
-small to medium networks for detecting and monitoring
+Our project aims to build a lightweight yet effective  Detection System (IDS) using Python that can be deployed in educational labs and small to medium networks for detecting and monitoring.
 
 Objective:
 Detect ARP spoofing attacks by monitoring suspicious changes in IP-to-MAC mappings.
@@ -18,7 +15,7 @@ Monitor and log abnormal or unauthorized HTTP requests, including uncommon paths
 
 
 SCOPE:
-COnsist of three main modules
+Consist of three main modules
 1: ARP Spoof Detector
 2:Port Scan Detector
 3:HTTP Request Monitor
