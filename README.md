@@ -39,4 +39,6 @@ Optional enhancements (in future versions):
 -GeoIP tracking for incoming HTTP request
 
 CONCULSION
-OUR project provides a functional and modular Detection tool tailored for hands-on learning, research, and detection of common network threats using Python. It emphasizes visibility, modularity, and simplicity, making it ideal for cybersecurity students, ethical hackers, and small-scale defenders.
+OUR project provides a functional and modular Detection tool tailored for hands-on learning, research, and detection of common network 
+threats using Python. It emphasizes visibility, modularity, and simplicity, making it ideal for cybersecurity students, ethical hackers, and 
+small-scale defenders.
