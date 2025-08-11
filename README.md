@@ -1,41 +1,43 @@
-# Group-7-cyber-sec
-Project Title:
- Advanced Python-Based ARP Spoofing, Port Scanning, and HTTP Anomaly Detection
- 
- In recent network environments, securing internal and external communications is mainthings  due to the growing number of cyberattacks targeting vulnerabilities at different layers of the OSI model. Traditional firewalls and antivirus tools are often insufficient to detect low-level or stealthy threats like ARP spoofing, SYN port scans, or unauthorized HTTP access.
+Log File Anomaly Detector
+is a lightweight real-time log anomaly detector written in Python.  
+It’s designed to help security ops teams and system administrators detect suspicious activity early — such as repeated failed login attempts, suspicious commands, or potential brute-force attacks — without requiring a full SIEM stack.
+but also  helps security analysts, incident responders, and IT admins detect malicious activities such as ransomware encryption, unauthorized data exfiltration
 
-Our project aims to build a lightweight yet effective  Detection System (IDS) using Python that can be deployed in educational labs and small to medium networks for detecting and monitoring.
+our project is simple enough for small-scale deployment but robust enough to be extended for enterprise environments.
 
-Objective:
-Detect ARP spoofing attacks by monitoring suspicious changes in IP-to-MAC mappings.
+## Objective%%%%
 
-Identify port scanning behaviors 
-
-Monitor and log abnormal or unauthorized HTTP requests, including uncommon paths or methods.
-
-
-SCOPE:
-Consist of three main modules
-1: ARP Spoof Detector
-2:Port Scan Detector
-3:HTTP Request Monitor
-
-TOOLS AND TECH USED IN OUR PROJECT
-*python3 
-some python lib
-platform Linux and Windows for testing
-ide : VS code
+-  real-time log monitoring** with pure-Python tailing (handles log rotation).
+-  Threshold-based detection** of excessive auth failures (configurable per IP).
+-  Suspicious command detection*
+-  Sliding time-window** logic 
+-  Polymorphic alerting
+-  Optional integration** with AbuseIPDB for threat intelligence enrichment.
+-  JSON config support ann flexible deployment.
 
 
 
-IN FUTURE ENHANCEMENT
-Optional enhancements (in future versions):
+Features
 
--Email  alerting
--JSON log output
--GeoIP tracking for incoming HTTP request
+Monitors file creation, deletion, and modification in real-time
+logs all events with timestamps and details
+Customizable monitoring paths via config
+Works on Linux, Windows, and macOS
+No heavy dependencies — simple and portable
 
-CONCULSION
-OUR project provides a functional and modular Detection tool tailored for hands-on learning, research, and detection of common network 
-threats using Python. It emphasizes visibility, modularity, and simplicity, making it ideal for cybersecurity students, ethical hackers, and 
-small-scale defenders.
+
+
+future Enhancements or adjusment
+GUI interface (may be)
+ADVANCED FEATURE - POSSILBLE
+CLOUD INTEGRATION FOR ALERTING
+
+### Prerequisites
+
+Python 3.8+
+(`requests` library for Slack / AbuseIPDB integration)
+
+Install dependencies:
+
+```bash
+pip install requests
