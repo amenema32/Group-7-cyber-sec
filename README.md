@@ -1,43 +1,53 @@
-Log File Anomaly Detector
-is a lightweight real-time log anomaly detector written in Python.  
-It’s designed to help security ops teams and system administrators detect suspicious activity early — such as repeated failed login attempts, suspicious commands, or potential brute-force attacks — without requiring a full SIEM stack.
-but also  helps security analysts, incident responders, and IT admins detect malicious activities such as ransomware encryption, unauthorized data exfiltration
+# Log File Anomaly Detector
 
-our project is simple enough for small-scale deployment but robust enough to be extended for enterprise environments.
+**Log File Anomaly Detector** is a lightweight, real-time log anomaly detection tool written in Python.  
 
-## Objective%%%%
+It’s designed to help **security operations teams** and **system administrators** detect suspicious activity early — such as repeated failed login attempts, suspicious commands, or potential brute-force attacks — without requiring a full SIEM stack.
 
--  real-time log monitoring** with pure-Python tailing (handles log rotation).
--  Threshold-based detection** of excessive auth failures (configurable per IP).
--  Suspicious command detection*
--  Sliding time-window** logic 
--  Polymorphic alerting
--  Optional integration** with AbuseIPDB for threat intelligence enrichment.
--  JSON config support ann flexible deployment.
+It also helps **security analysts, incident responders, and IT admins** detect malicious activities such as:
+- Ransomware encryption
+- Unauthorized data exfiltration
 
+Our project is **simple enough for small-scale deployment**, but **robust enough to be extended** for enterprise environments.
 
+---
 
-Features
+## 🎯 Objectives
 
-Monitors file creation, deletion, and modification in real-time
-logs all events with timestamps and details
-Customizable monitoring paths via config
-Works on Linux, Windows, and macOS
-No heavy dependencies — simple and portable
+- **Real-time log monitoring** with pure-Python tailing (handles log rotation)
+- **Threshold-based detection** of excessive authentication failures (configurable per IP)
+- **Suspicious command detection**
+- **Sliding time-window** logic
+- **Polymorphic alerting**
+- **Optional integration** with AbuseIPDB for threat intelligence enrichment
+- **JSON config support** and flexible deployment
 
+---
 
+## ✨ Features
 
-future Enhancements or adjusment
-GUI interface (may be)
-ADVANCED FEATURE - POSSILBLE
-CLOUD INTEGRATION FOR ALERTING
+- Monitors file creation, deletion, and modification in real-time  
+- Logs all events with timestamps and details  
+- Customizable monitoring paths via configuration  
+- Works on **Linux**, **Windows**, and **macOS**  
+- No heavy dependencies — simple and portable  
 
-### Prerequisites
+---
 
-Python 3.8+
-(`requests` library for Slack / AbuseIPDB integration)
+## 🔮 Future Enhancements / Adjustments
 
-Install dependencies:
+- GUI interface (possible)  
+- Advanced detection features (possible)  
+- Cloud integration for alerting  
 
+---
+
+## 🛠 Prerequisites
+
+- **Python 3.8+**  
+- [`requests`](https://pypi.org/project/requests/) library (for Slack / AbuseIPDB integration)  
+
+**Install dependencies:**
 ```bash
+pip
 pip install requests
