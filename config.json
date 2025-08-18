@@ -1,1 +1,20 @@
-
+CONFIG_JSON = r"""
+{
+  "log_file": "/var/log/auth.log",
+  "failed_login_threshold": 5,
+  "time_window_sec": 60,
+  "suspicious_commands": [
+    "rm -rf", "nc -e", "ncat -e", "wget http", "curl http", "base64 -d",
+    "powershell -enc", "scp ", "ssh -R", "certutil -urlcache -split -f"
+  ],
+  "alert_mode": "both",
+  "slack_webhook": "",
+  "abuseipdb_api_key": "",
+  "filesystem_watch_paths": [
+    "/home"
+  ],
+  "filesystem_poll_interval": 5,
+  "encryption_extensions": [".enc", ".lock", ".crypt", ".crypted"],
+  "encryption_burst_threshold": 10
+}
+"""
