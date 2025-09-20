@@ -2,6 +2,7 @@ from setuptools import setup
 import time
 import re
 from collections import defaultdict
+#main code to run entire system
 
 # ---------------- LoFAD Core Code ---------------- #
 SUSPICIOUS_COMMANDS = [
