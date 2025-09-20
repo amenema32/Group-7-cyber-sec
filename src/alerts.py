@@ -2,6 +2,7 @@ import smtplib
 import requests
 import json
 from email.message import EmailMessage
+#modified based on time update
 
 USER_AGENT = "LoFAD/1.0"
 
@@ -52,3 +53,4 @@ def abuseipdb_check(api_key: str, ip: str):
     except Exception as e:
         print(f"[LoFAD] AbuseIPDB lookup failed: {e}")
     return None
+
