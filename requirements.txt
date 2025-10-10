@@ -1,0 +1,13 @@
+# Core dependencies
+requests>=2.31.0       # For querying APIs like AbuseIPDB
+watchdog>=3.0.0        # For live monitoring of log files
+rich>=13.5.2           # For pretty console output
+
+# Slack integration (optional, enable only if using Slack alerts)
+slack_sdk>=3.32.1
+
+# Optional extras for email alerts
+python-dotenv>=1.0.0   # If storing credentials in a .env file
+
+# Packet sniffing or offline analysis (only if needed)
+scapy>=2.5.1
