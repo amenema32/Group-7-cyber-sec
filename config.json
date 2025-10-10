@@ -1,4 +1,3 @@
-CONFIG_JSON = r"""
 {
   "log_file": "/var/log/auth.log",
   "failed_login_threshold": 5,
@@ -17,4 +16,4 @@ CONFIG_JSON = r"""
   "encryption_extensions": [".enc", ".lock", ".crypt", ".crypted"],
   "encryption_burst_threshold": 10
 }
-"""
+
