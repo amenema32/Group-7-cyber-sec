@@ -23,6 +23,6 @@ Console output
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/amenema32/Group-7-cyber-sec/LoFAD.git
-cd LoFAD
+git clone https://github.com/amenema32/Group-7-cyber-sec.git
+cd Group-7-cyber-sec
 
